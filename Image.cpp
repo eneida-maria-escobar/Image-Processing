@@ -1,4 +1,19 @@
 
+/*
+
+In Image.cpp, I implemented the core functionality for handling TGA image files in my project. 
+The file contains the Image class, which is responsible for reading, storing, and writing image data. 
+It first reads the image header to gather metadata like width, height, and color depth, ensuring the correct format for pixel data. 
+The createImage function then extracts each pixel's RGB values from the file, storing them in a vector of Pixel objects. 
+When modifications are made to the image—such as blending layers or adjusting colors—the pixel data is updated in memory. 
+Finally, the writeImage function saves the modified pixel data back to a new TGA file, preserving the original header information but 
+applying all transformations made. Essentially, Image.cpp acts as the engine that drives image processing by converting raw TGA data 
+into manipulable objects and writing out the results.
+
+*/
+
+
+
 #include "Image.h"
 
 Image::Pixel::Pixel()
